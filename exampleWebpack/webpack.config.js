@@ -8,7 +8,7 @@ module.exports = config;
 const config = {
     entry: __dirname + '/app/index.js',
     module: {
-        loader: [
+        loaders: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
