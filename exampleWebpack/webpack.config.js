@@ -1,11 +1,11 @@
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-    template: __dir + '/app/index.html',
+    template: __dirname + '/app/index.html',
     filename: 'index.html',
-    injectt: 'body'
-})
-module.exports = config;
-const config = {
+    inject: 'body'
+});
+
+module.exports = {
     entry: __dirname + '/app/index.js',
     module: {
         loaders: [
