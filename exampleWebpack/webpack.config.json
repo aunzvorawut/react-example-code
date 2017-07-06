@@ -1,0 +1,13 @@
+module.exports = config;
+const config = {
+    entry: __dirname + '/app/index.js',
+    module: {
+        loader: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+            }
+        ]
+    }
+};
